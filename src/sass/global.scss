@@ -1,0 +1,44 @@
+@use 'sass/color';
+
+@import url('//fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: color.$text;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 87.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f3f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b5bcc3;
+  border-radius: 1rem;
+  border: 3px solid #f1f3f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666a6e;
+}
+
+// If you need to style the #app element
+// :global(#app) {}
